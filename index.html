@@ -88,9 +88,9 @@
             width: 100vw;
             height: auto;
         }
-        
+
         #earsfield {
-            padding: 4vw 6vw 4vw 6vw;
+            padding: 4vw 6vw 4.5vw 6vw;
             color: #fff;
             text-align: center;
         }
@@ -99,10 +99,17 @@
             text-transform: uppercase;
             font-size: 6vw;
         }
-        
+
         #earsart {
-            width: 40vw;
+            width: 30vw;
             height: auto;
+            border: 8px solid #262626;
+            margin: 1.5vw;
+        }
+
+        #earsspot {
+            width: calc(30vw + 15px);
+            margin-left: -1px;
         }
 
         #spotify {
@@ -140,16 +147,34 @@
                 width: auto;
             }
         }
-        
+
         @media only screen and (min-width: 781px) and (max-width: 1340px) {
             #earshead {
                 font-size: 80px;
             }
         }
-        
+
         @media only screen and (max-width: 780px) {
             #earshead {
                 font-size: 10vw;
+            }
+        }
+
+        @media only screen and (min-width: 504px) and (max-width: 1340px) {
+            #earsart {
+                width: 418px;
+            }
+            #earsspot {
+                width: calc(418px + 15px);
+            }
+        }
+
+        @media only screen and (max-width: 503px) {
+            #earsart {
+                width: 92%;
+            }
+            #earsspot {
+                width: calc(92% + 15px);
             }
         }
 
@@ -175,7 +200,8 @@
     <div id="screen2">
         <div id="earsfield">
             <p id="earshead">ears of gold out now</p>
-            <img id="earsart" src="/img/ears.jpg" alt="Ears of Gold" title="Ears of Gold">
+            <a href=""><img id="earsart" src="/img/ears.jpg" alt="Ears of Gold" title="Ears of Gold"></a><br>
+            <iframe id="earsspot" src="https://open.spotify.com/embed/album/4IbokMPmyBQ4PC5a9R7pdk" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
     <div id="screen3">
