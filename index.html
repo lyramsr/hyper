@@ -108,8 +108,8 @@
 <body>
     <div id="screen1">
         <div id="box">
-            <img draggable="false" id="imagemap" src="/img/imagemap.png" usemap="#hyperlinks">
-            <map name="hyperlinks">
+            <img draggable="false" id="imagemap" src="/img/imagemap.png" usemap="#map">
+            <map name="map">
                 <area shape="rect" coords="41, 410, 178, 544" href="https://facebook.com/wearehyper" target="_blank" alt="Facebook" title="Facebook">
                 <area shape="rect" coords="200, 398, 338, 534" href="https://instagram.com/wearehyper_" target="_blank" alt="Instagram" title="Instagram">
                 <area shape="rect" coords="359, 386, 496, 523" href="spotify:artist:5XcdzflqyNR49w3vMjStIh" alt="Spotify" title="Spotify">
@@ -125,6 +125,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="/script/imageMapResizer.min.js"></script>
+    <script type="text/javascript">
+        $('map').imageMapResize();
+    </script>
     <iframe id="spotify" src="https://open.spotify.com/follow/1/?uri=spotify:artist:5XcdzflqyNR49w3vMjStIh&size=basic&theme=dark&show-count=0" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
 </body>
 
