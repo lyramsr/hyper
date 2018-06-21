@@ -112,6 +112,32 @@
             margin-left: -1px;
         }
 
+        #videoscreen {
+            width: 100vw;
+            height: 56.25vw;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+        }
+
+        #footer {
+            height: 8vh;
+            position: relative;
+        }
+
+        #footerimg {
+            height: 4vh;
+            width: auto;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
         #spotify {
             width: 94.14px;
             height: 28px;
@@ -178,6 +204,17 @@
             }
         }
 
+        @media only screen and (max-height: 800px) {
+            #footer {
+                height: 64px;
+            }
+
+            #footerimg {
+                height: 32px;
+            }
+
+        }
+
     </style>
 
     <script type="text/javascript" src="./script/prefixfree.min.js"></script>
@@ -199,12 +236,18 @@
     </div>
     <div id="screen2">
         <div id="earsfield">
-            <p id="earshead">ears of gold out now</p>
+            <p id="earshead">Ears of Gold out now</p>
             <a href=""><img id="earsart" src="/img/ears.jpg" alt="Ears of Gold" title="Ears of Gold"></a><br>
             <iframe id="earsspot" src="https://open.spotify.com/embed/album/4IbokMPmyBQ4PC5a9R7pdk" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
+    <div id="videoscreen">
+        <iframe id="video" src="https://www.youtube.com/embed/J8xzUPN1aO8?rel=0&autohide=1&showinfo=0&controls=0" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
     <div id="screen3">
+    </div>
+    <div id="footer">
+        <a href="https://lyramsr.co" target="_blank"><img id="footerimg" src="/img/footer.png" alt="site design by lyra" title="site design by lyra"></a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="/script/imageMapResizer.min.js"></script>
