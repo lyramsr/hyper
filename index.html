@@ -16,10 +16,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="author" content="HYPER!">
-    <meta name="description" content="Alt rock trio from Ghent. Heavy guitar riffs, big show & tight suits, with a slice of ADHD!">
+    <meta name="description" content="Alt rock trio from Ghent. Heavy riffs, big show & tight suits, with a slice of ADHD!">
     <meta name="keywords" content="hyper, band, creatif, mindz, creative, minds, ears, of, gold, humo, rock, rally, adhd, kunstbende, iskander, moens, achilles, de, raedt, sybe, versluys, siebe, achiel, it's, its, fake, animals, the, forest, ep, album, junior, eurosong, wie, wordt, les trois, full, music, official, belgium, belgië, gent, ghent, zelzate, industrieland, paul fauvert">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta property="og:description" content="Alt rock trio from Ghent. Heavy guitar riffs, big show & tight suits, with a slice of ADHD!">
+    <meta property="og:description" content="Alt rock trio from Ghent. Heavy riffs, big show & tight suits, with a slice of ADHD!">
     <meta property="og:image" content="/meta/opengraph.jpg">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:height" content="2715">
@@ -29,9 +29,15 @@
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
 
     <style>
+        @font-face {
+            font-family: 'Archivo Narrow Hyper';
+            font-weight: 400;
+            src: local('Archivo Narrow Italic'), local('ArchivoNarrow-Italic'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss2ApVBdCYD5Q7hcxTE1ArZ0bb1uX563v0qNxg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
         body {
             background: #262626;
-            font-family: "Contrail One", sans-serif;
             overflow-x: hidden;
         }
 
@@ -90,7 +96,7 @@
         #screen2 {
             height: auto;
             width: 100vw;
-            background: url(./img/wall2b.jpg);
+            background: url(./img/wall2.jpg);
             background-size: cover;
             background-position: center;
         }
@@ -104,6 +110,14 @@
             background-attachment: fixed;
         }
 
+        #screen4 {
+            height: auto;
+            width: 100vw;
+            background: url(./img/wall4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
         #box>img {
             position: absolute;
             top: 50%;
@@ -113,15 +127,30 @@
             height: auto;
         }
 
-        #earsfield {
+        .field {
             padding: 4vw 6vw 4.5vw 6vw;
             color: #fff;
             text-align: center;
         }
 
-        #earshead {
+        #songkick {
+            padding: 4vw 6vw 2.2vw 6vw !important;
+        }
+
+        #songkickwrapper {
+            font-family: "Archivo Narrow Hyper", sans-serif;
+            font-size: 1.5vw;
+        }
+
+        .head {
+            font-family: "Contrail One", sans-serif;
             text-transform: uppercase;
             font-size: 6vw;
+        }
+
+        .spot {
+            width: calc(30vw + 15px);
+            margin-left: -1px;
         }
 
         #earsart {
@@ -131,15 +160,10 @@
             margin: 1.5vw;
         }
 
-        #earsspot {
-            width: calc(30vw + 15px);
-            margin-left: -1px;
-        }
-
         #videoscreen {
             text-align: center;
             height: 56.25vw;
-            /* max-height: 100vh; */
+            /* max-height: 100vh; (for 16:9) */
             background: #000;
         }
 
@@ -148,7 +172,7 @@
             height: 56.25vw;
             /*
             max-width: 177.7777777778vh;
-            max-height: 100vh;
+            max-height: 100vh; (for 16:9)
             */
             text-align: center;
             display: inline-block;
@@ -212,13 +236,13 @@
         }
 
         @media only screen and (min-width: 781px) and (max-width: 1340px) {
-            #earshead {
+            .head {
                 font-size: 80px;
             }
         }
 
         @media only screen and (max-width: 780px) {
-            #earshead {
+            .head {
                 font-size: 10vw;
             }
         }
@@ -227,7 +251,7 @@
             #earsart {
                 width: 418px;
             }
-            #earsspot {
+            .spot {
                 width: calc(418px + 15px);
             }
         }
@@ -236,7 +260,7 @@
             #earsart {
                 width: 92%;
             }
-            #earsspot {
+            .spot {
                 width: calc(92% + 15px);
             }
         }
@@ -272,15 +296,24 @@
         </div>
     </div>
     <div id="screen2">
-        <div id="earsfield">
-            <p id="earshead">Ears of Gold out now</p>
+        <div class="field">
+            <p class="head">Ears of Gold out now</p>
             <a href="/earsofgold" target="_blank"><img id="earsart" src="/img/ears.jpg" alt="Ears of Gold" title="Ears of Gold"></a><br>
-            <iframe id="earsspot" src="https://open.spotify.com/embed/album/00hccMb76Al5Y1kaiKAnPK" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="spot" src="https://open.spotify.com/embed/album/00hccMb76Al5Y1kaiKAnPK" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
     <div id="videoscreen">
         <div id="videowrapper">
             <iframe id="video" src="https://www.youtube.com/embed/7apUX8Gmau0?rel=0&autohide=1&showinfo=0&controls=1" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+    <div id="screen4">
+        <div class="field" id="songkick">
+            <p class="head">live</p>
+            <div id="songkickwrapper">
+                <a href="https://www.songkick.com/artists/9588914" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>
+                <script src="//widget.songkick.com/9588914/widget.js"></script>
+            </div>
         </div>
     </div>
     <div id="screen3">
