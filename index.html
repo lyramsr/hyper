@@ -78,7 +78,7 @@
         }
         */
 
-        #screen1 { /* front */
+        #front {
             height: 100vh;
             width: 100vw;
             background: url(./img/wall.jpg);
@@ -87,29 +87,29 @@
             background-attachment: fixed;
         }
 
-        #screen2 { /* eog */
+        #earsofgold {
             height: auto;
             width: 100vw;
             background: url(./img/wall2.jpg);
             background-size: cover;
             background-position: center;
         }
+        
+        #live {
+            height: auto;
+            width: 100vw;
+            background: url(./img/wall4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
 
-        #screen3 { /* end shot */
+        #end {
             height: 100vh;
             width: 100vw;
             background: url(./img/wall3.jpg);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-        }
-
-        #screen4 { /* live */
-            height: auto;
-            width: 100vw;
-            background: url(./img/wall4.jpg);
-            background-size: cover;
-            background-position: center;
         }
 
         #box>img {
@@ -293,7 +293,7 @@
 </head>
 
 <body>
-    <div id="screen1">
+    <div id="front">
         <div id="box">
             <img draggable="false" id="imagemap" src="/img/imagemap.png" usemap="#map">
             <map name="map">
@@ -306,7 +306,7 @@
             </map>
         </div>
     </div>
-    <div id="screen2">
+    <div id="earsofgold">
         <div class="field">
             <p class="head">Ears of Gold out now</p>
             <a href="/earsofgold" target="_blank"><img id="earsart" src="/img/ears.jpg" alt="Ears of Gold" title="Ears of Gold"></a><br>
@@ -318,7 +318,7 @@
             <iframe id="video" src="https://www.youtube.com/embed/7apUX8Gmau0?rel=0&autohide=1&showinfo=0&controls=1" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
-    <div id="screen4">
+    <div id="live">
         <div class="field" id="songkick">
             <p class="head">live</p>
             <div id="songkickwrapper">
@@ -328,7 +328,7 @@
             <p class="text">booking: <a href="mailto:ronald@humusmusic.be">ronald@humusmusic.be</a></p>
         </div>
     </div>
-    <div id="screen3">
+    <div id="end">
     </div>
     <div id="footer">
         <a href="https://lyramsr.co" target="_blank"><img id="footerimg" src="/img/footer.png" alt="site design by lyra" title="site design by lyra"></a>
