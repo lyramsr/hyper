@@ -30,12 +30,19 @@
 
     <style>
         @font-face {
-            font-family: 'VCR OSD Mono';
+            font-family: 'Ned';
             src: local('VCR OSD Mono'), local('VCROSDMono'), url('/fonts/VCROSDMono.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
         }
-        
+
+        @font-face {
+            font-family: 'Cowboy Moves';
+            src: local('Georgia'), local('Georgia-BoldItalic'), url('/fonts/georgia.woff2') format('woff2');
+            font-weight: bold;
+            font-style: italic;
+        }
+
         @font-face {
             font-family: 'Iosevka';
             src: url('/fonts/iosevka-custom-regular.woff2') format('woff2');
@@ -159,13 +166,14 @@
         }
 
         .head {
-            font-family: "VCR OSD Mono", monospace;
+            font-family: "Cowboy Moves", serif;
+            font-style: italic;
             text-transform: uppercase;
             font-size: 3.8vw;
         }
 
         .text {
-            font-family: "Iosevka", monospace;
+            font-family: "Source Sans Pro", monospace;
             font-size: 1.6vw;
         }
 
@@ -329,6 +337,7 @@
     </div>
     <div id="single">
         <div class="field">
+            <p class="head">cowboy moves</p>
             <a href="/ned" target="_blank"><img id="singleart" src="/img/ned.png" alt="NED" title="NED"></a><br>
             <iframe class="spot" src="https://open.spotify.com/embed/album/5iEcxMDFk6GlsyDEoqYOhk" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             <div style="height: 1.5vw;"></div>
@@ -339,7 +348,7 @@
     </div>
     <div id="videoscreen">
         <div id="videowrapper">
-            <iframe id="video" src="https://www.youtube.com/embed/lTGOoyAgPpw?rel=0&autohide=1&showinfo=0&controls=1" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/rdd9Y3jxaxY?rel=0&autohide=1&showinfo=0&controls=1" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
     <div id="live">
@@ -349,7 +358,7 @@
                 <a href="https://www.songkick.com/artists/9588914" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent"></a>
                 <script src="//widget.songkick.com/9588914/widget.js"></script>
             </div>
-            <p class="text">booking: <a href="mailto:ronald@humusmusic.be">shout@wearehyper.band</a> • +32 486 68 60 53</p>
+            <p class="text">booking: <a href="mailto:shout@wearehyper.band">shout@wearehyper.band</a> • +32 486 68 60 53</p>
         </div>
     </div>
     <div id="end">
